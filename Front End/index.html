@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento de Encostas com IoT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Monitoramento de Encostas com IoT</h1>
+    </header>
+    
+    <main>
+        <div class="sensor-data">
+            <h2>Dados de Inclinação</h2>
+            <div class="data-box" id="inclination-data">
+                <!-- Dados de inclinação serão exibidos aqui -->
+                <p>Inclinação: <span id="inclination-value">---</span>°</p>
+            </div>
+            <div class="dashboard">
+                <h3>Histórico de Inclinação</h3>
+                <canvas id="inclination-chart"></canvas>
+            </div>
+        </div>
+        
+        <div class="sensor-data">
+            <h2>Dados de Umidade</h2>
+            <div class="data-box" id="humidity-data">
+                <!-- Dados de umidade serão exibidos aqui -->
+                <p>Umidade: <span id="humidity-value">---</span>%</p>
+            </div>
+            <div class="dashboard">
+                <h3>Histórico de Umidade</h3>
+                <canvas id="humidity-chart"></canvas>
+            </div>
+        </div>
+        <!--
+        <div class="sensor-data">
+            <h2>Dados de Pressão</h2>
+            <div class="data-box" id="pressure-data">
+                Dados de pressão serão exibidos aqui
+                <p>Pressão: <span id="pressure-value">---</span> hPa</p>
+            </div>
+            <div class="dashboard">
+                <h3>Histórico de Pressão</h3>
+                <canvas id="pressure-chart"></canvas>
+            </div>
+        </div>-->
+        
+        <div class="sensor-data">
+            <h2>Dados de Vibração</h2>
+            <div class="data-box" id="vibration-data">
+               <!--Dados de vibração serão exibidos aqui-->
+                <p>Vibração: <span id="vibration-value">---</span> m/s²</p>
+            </div>
+            <div class="dashboard">
+                <h3>Histórico de Vibração</h3>
+                <canvas id="vibration-chart"></canvas>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Monitoramento de Encostas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script> <!-- Script para obter dados em tempo real (exemplo) -->
+    <script src="dashboard.js"></script> <!-- Script para exibir o dashboard -->
+</body>
+</html>
