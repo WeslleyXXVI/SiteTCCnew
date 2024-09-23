@@ -2,8 +2,8 @@
     "name": "my-fullstack-app",
     "version": "1.0.0",
     "scripts": {
-      "start:frontend": "cd Front End && npm run start",
-      "start:backend": "cd Back End && node server.js",
+      "start:frontend": "cd frontend && npm run start",
+      "start:backend": "cd backend && node server.js",
       "start": "npm run start:backend & npm run start:frontend"
     }
   }
